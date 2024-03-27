@@ -1,0 +1,58 @@
+<div class="container-fluid">
+
+    <h2>Product details</h2>
+    <!-- <dl> -->
+    <!-- <dt>Name</dt>
+        <dd>{{product.Name}}</dd>
+
+        <dt>stock</dt>
+        <dd><input type="checkbox" [checked]="product.stock"></dd> -->
+
+
+    <!-- <dt>Name</dt>
+        <dd><input type="text" [(ngModel)]="name"></dd>
+        <dt>price</dt>
+        <dd><input type="number" [(ngModel)]="price"></dd>
+        <dt>stock</dt>
+        <dd><input type="checkbox" [(ngModel)]="stock"></dd>
+
+        <select [(ngModel)]="selectItem">
+
+            <option>Delhi</option>
+            <option>Bhubaneswar</option>
+
+            <option>Bangalore</option>
+
+
+        </select>
+    </dl>
+
+    name:{{name}}<br>
+    price:{{price}}<br>
+    stock:{{(stock?"Avaliable":"outofstock")}}<br>
+    selectCity:{{selectItem}} -->
+    <div class="container-fluid">
+        <h2>Product Details</h2>
+        <div class="mb-2 w-50">
+            <input type="range" [(ngModel)]="productNo" min="1" value="1" max="20" class="form-range">
+        </div>
+        <div class="card m-3 p-3 w-50">
+            <img [src]="product.image" height="200" class="card-img-top">
+            <div class="card-header" style="height: 140px;">
+                <h3>{{product.titel}}</h3>
+                <p>{{product.price}}</p>
+            </div>
+            <div class="card-body">
+                <p>{{product.description}}</p>
+            </div>
+            <div class="card-footer">
+                <span class="bi bi-star-fill text-success"></span>
+                {{product.rating.rate}}
+                <span class="text-dark">{{product.rating.count}}</span>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

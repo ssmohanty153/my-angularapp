@@ -1,0 +1,9 @@
+#background {
+    background-image: url("/assets/netflixback.png");
+    height: 768px;
+}
+#box {
+    margin: -30px;
+    background-color: rgba(0,0,0,0.5);
+    height: 768px;
+}
