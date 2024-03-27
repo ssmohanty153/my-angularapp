@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <h2>Product Details</h2>
+    <dl>
+        <dt>Name</dt>
+        <dd>{{product.Name}}</dd>
+        <dt><button (click)="PreviewClick()" class="btn btn-primary">{{btnText}}</button></dt>
+        <dd>
+            <div *ngIf="togglepreview; then preview; else description"></div>
+            <ng-template #preview>
+                <img [src]="product.Preview" width="200" height="200">
+            </ng-template>
+            <ng-template #description>
+                <p>{{product.Description}}</p>
+            </ng-template>
+        </dd>
+    </dl>
+</div>
