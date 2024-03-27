@@ -6,6 +6,7 @@ import { NetflixMainComponent } from './netflix/netflix-main/netflix-main.compon
 import { NetflixRegisterComponent } from './netflix/netflix-register/netflix-register.component';
 import { DataBindingComponent } from './data-binding/data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { NgIfPracticeComponent } from './ng-if-practice/ng-if-practice.component';
 
 
 
@@ -19,9 +20,10 @@ import { FormsModule } from '@angular/forms';
         NetflixHeaderComponent,
         NetflixMainComponent,
         NetflixRegisterComponent,
-        DataBindingComponent
+        DataBindingComponent,
+        NgIfPracticeComponent
     ],
-    bootstrap: [DataBindingComponent],
+    bootstrap: [NgIfPracticeComponent],
 })
 export class AppModule { }
 
